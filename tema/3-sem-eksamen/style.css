@@ -1,0 +1,416 @@
+/*
+Theme Name: wpbootstrap
+Theme URI: devstorm.dk
+Author: the Nicolaj Jensen
+Author URI: Devstorm.dk
+Description:  Simpelt wordpress tema
+Version: 1.0
+*/
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+  @font-face {
+    font-family: Antropos;
+    src: url("fonts/antropos.ttf");
+}
+
+@font-face {
+  font-family: Sofia;
+  src: url("fonts/sofia.TTF");
+}
+
+
+
+/* NAVBAR STYLING */
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active li{
+  color: #FFF !important;
+  border-bottom: 5px solid #c3575a;
+  box-sizing: border-box;
+}
+nav li:hover{
+  border-bottom: 5px solid #c3575a;
+  box-sizing: border-box;  
+  transition: 100ms ease-in-out;
+}
+nav li a:hover{
+  background-color: transparent;
+}
+.custom-logo-link img{
+  max-width: 250px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+  color: #c3575a;
+  transition: 100ms ease-in-out;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active li:hover{
+  border-bottom: 5px solid #c3575a;
+  box-sizing: border-box;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #FFF;
+  border-bottom: 5px solid transparent;
+  box-sizing: border-box;
+  padding-bottom: 2px;
+}
+nav li{
+  font-family: antropos;
+  font-size: 16px;
+  border-bottom: 5px solid transparent;
+  box-sizing: border-box;
+}
+
+nav img{
+  height: 50px;
+  color: #FFF;
+}
+
+.navbar {
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+  z-index: 10;
+  padding-top: 0px;
+}
+
+.custom-logo-link:hover{
+  border: none;
+  background-color: transparent !important;
+}
+.custom-logo-link{
+  border: none;
+  background-color: transparent !important;
+  
+}
+.no_padding{
+  padding: 0px;
+}
+.top_content_no_image{
+  padding:0px 60px 10px 60px;
+}
+
+/* HEADER STYLING */
+
+
+/* .header_image{
+  max-width: 100%;
+  max-height: 90vh;
+  position: absolute !important;
+
+
+} */
+/*
+.header_image{
+  background-size: cover;
+  max-width: 2000px;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+} */
+
+.header_image{
+  width: 100%;
+  height: 100%;
+  background: url('http://killevippen.devstorm.dk/wp-content/uploads/2018/06/Killevippen_2017-7.jpg') center center no-repeat;
+  background-size: cover;
+  margin-top: -77px;
+  max-height: 90vh;
+  border-bottom: 15px solid #c3575a;
+}
+.header_image_short{
+  width: 100%;
+  height: 100%;
+  background: url('http://killevippen.devstorm.dk/wp-content/uploads/2018/06/Killevippen_2017-7-1-e1528188961345.jpg') center center no-repeat;
+  background-size: cover;
+  margin-top: -77px;
+  max-height: 40vh;
+  border-bottom: 15px solid #c3575a;
+}
+
+.post-content{
+  padding: 40px 40px 40px 40px;
+  background-color: #FFF;
+}
+.header_title{
+  margin-top: 30vh;
+  font-size: 50pt;
+  font-family: antropos;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+.big_button{
+  background-color: #c3575a;
+  padding: 10px 40px;
+  font-family: antropos;
+  color: #FFF;
+  font-size: 20px;
+}
+.standart_title{
+  font-family: antropos;
+  color: #602b2d;
+  font-size: 18pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.section_devider{
+  width: 100%;
+  background: url("img/bg_red.svg") center no-repeat;
+  background-size: cover;
+}
+.info_boks{
+  padding-top: 50px;
+}
+.info_boks h2{
+  font-family: antropos;
+  color: #FFF;
+  font-size: 20pt;
+}
+.info_boks p{
+  color: #FFF;
+  line-height: 24pt;
+  margin-bottom: 20px;
+}
+
+.info_boks i{
+  font-size: 20pt;
+  color: #FFF;
+  margin-top: 4px;
+}
+
+.featured_block{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.featured_block img{
+  width: 100%;
+  height: auto;
+}
+.featured_block h2{
+  font-family: sofia;
+  color: #602b2d;
+  font-size: 18pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+h2, h3{
+  font-family: sofia !important;
+}
+
+.featured_block p{
+  line-height: 24pt;
+  padding: 0 10px;
+  color: #373d44;
+  font-size: 12pt;
+}
+.featured_block a{
+  background-color: #c3575a;
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  font-family: antropos;
+  color: #FFF;
+  font-size: 20px;
+  text-align: center;
+}
+
+.big_quote{
+  background-color: #FFF;
+}
+.big_quote img{
+  width: 100%;
+  height: auto;
+}
+.big_quote span{
+  display: block;
+  padding: 30px;
+  color: #602b2d;
+  font-size: 15pt;
+}
+.big_quote p{
+  color: #373d44;
+  padding-left: 30px;
+  font-size: 12px;
+}
+a:hover{
+  background-color: #e5686c;
+  transition: background-color 300ms ease-in-out;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.header_content{
+  margin-top: -60px;
+  width: 100%;
+  margin: 0px auto 0 auto;
+}
+.header_content img{
+  height: auto;
+  width: 100%;
+}
+.bg_svg{
+  width: 100%;
+  background: url("img/bg_red.svg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  padding-bottom: 60px;
+}
+.block{
+  display: block;
+}
+.accordion{
+  text-align: left;
+  background-color: #FFF;
+  border: none;
+  padding: 20px;
+  margin: 20px 0px;
+  display: block;
+}
+.card-body{
+  background-color: #FFF;
+  padding: 40px;
+  margin: 10px 5% 10px 5%;
+  border-left: 5px solid #c3575a;
+  width: 90%;
+}
+
+.top_content{
+  background-color: #FFF;
+  margin-bottom: 20px;
+  border-bottom: 15px solid #c3575a;
+}
+  
+.list_block{
+  margin-bottom: 10px;
+  background-color: #FFF;
+  padding: 20px;
+}
+.list_block img{
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.list_block h2{
+  color: #c3575a;
+}
+
+.pagenav a{
+  padding: 5px 20px;
+  background-color: #c3575a;
+  color: #FFF;
+  float: left;
+  margin-right: 10px;
+}
+
+.big_search{
+  background-color: #FFF;
+  margin: 20px 0px;
+  padding: 20px;
+}
+.big_search h2{
+  margin-top: 10px;
+}
+.big_search input{
+  height: 50px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+input[type=text] {
+  width: 70%;
+}
+.a2a_button_facebook:hover{
+background-color: transparent;
+}
+
+.bg-dark{
+  background-color: #c3575a !important;
+}
+.quick_link{
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 5px solid #FFF;
+  color:#000;
+}
+  .quick_link i{
+    margin-right: 10px;
+  }
+input[type=submit] {
+  width: 20%;
+  padding: 0px;
+  background-color: #c3575a;
+  color: #FFF;
+}
+.staff-member-position{
+  font-size: 12px;
+}
+  .big_search label{
+    display: none;
+  }
+  @media (max-width: 992px) {
+    .featured_block a{
+      margin-bottom: 80px;
+    }
+  }
+  
+
+  @media (max-width: 767.98px){
+    .navbar-expand-md > .container, .navbar-expand-md > .container-fluid{
+     
+      min-width: 100%;
+      padding: 0px;
+    }
+    .navbar{
+      padding: 0px;
+      
+    }
+    .navbar .container{
+      background-color: #c3575a;
+     padding: 0px 10px;
+    }
+    .header_image_short{
+      margin-top: 0px;
+    }
+    .container{
+      width: 100%;
+    }
+    body{
+      margin: 0px;
+    }
+    .card-body{
+      padding: 15px;
+    }
+    .custom-logo-link img{
+      margin: 0px;
+      max-width: 150px !important;
+      margin-right: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .header_title{
+      font-size: 30pt;
+    }
+    .post-content{
+      padding: 20px;
+    }
+    .post-content h2{
+      font-size: 30px;
+    }
+    .top_content_no_image{
+      padding: 0px 0px 20px 0px;
+    }
+
+  }
